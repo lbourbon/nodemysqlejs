@@ -45,7 +45,7 @@ console.log( "servidor rodando")
 })</code>
 
 
-## Criar database/databse.js
+## Criar database/database.js
 
 <code>
 const Sequelize = require("sequelize")
@@ -57,3 +57,13 @@ const connection = new Sequelize('nomeDoBanco', 'root<usuário>', 'senha', {
 
 module.exports = connection
 </code>
+#Acrescentar no index.js
+#Database
+const connection = require("./database/database")
+connection.authenticate().then(() => {
+  console.log("DB conectado com sucesso")
+}).catch((error) +> {
+  console.log(error)
+})
+
+## Criar pasta Partials
