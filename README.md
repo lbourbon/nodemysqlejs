@@ -8,11 +8,11 @@ npm init
 </code>
 #Após escolher nomes:
 <code>
-# npm install --save express sequelize mysql2 body-parser ejs
+npm install --save express sequelize mysql2 body-parser ejs
 </code>
 
 
-#Criar index.js
+## Criar index.js
 <code>
 const express = require('express')
 const app = express()
@@ -28,28 +28,4 @@ res.send("Hello, world")
 app.listen(8080, () => {
 console.log( "servidor rodando")
 })
-</code>
-
-<code>  
-    
-</code>
-
-<code>  
-    
-</code>
-
-<code>  
-    
-</code>
-
-<code>  
-    
-</code>
-
-<code>  
-    
-</code>
-
-<code>  
-    
 </code>
