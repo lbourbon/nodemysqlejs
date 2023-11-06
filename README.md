@@ -3,51 +3,42 @@
 # CRIAR PROJETO USANDO NODE EXPRESS MYSQL BOOTSTRAP EJS
 
 #Dentro da pasta do projeto no terminal
-<code>
-npm init    
-</code>
+```
+npm init
+ ``` 
 #Após escolher nomes
-<code>
+```
 npm install --save express sequelize mysql2 body-parser ejs
-</code>
-
+```
 
 ## Criar index.js
-<code>
+```
 const express = require('express')
 const app = express()
-</code>
 
 #View Engine
-<code>
 app.set('view engine', 'ejs')
-</code>
 
 #Static
-<code>
 app.use(express.static('public')) # criar pasta para arquivos estáticos "public"
-</code>
 
 #Body Parser
-<code>
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
-</code>
 
 #Rotas
-<code>
 app.get('/', (req, res) => {
 res.render("index")     # vai renderizar o arquivo index.ejs dentro da pasta "views"
 })
 
 app.listen(8080, () => {
 console.log( "servidor rodando")
-})</code>
-
+})
+```
 
 ## Criar pasta database/database.js e criar o banco de dados no mysql workbench
 
-<code>
+```
 const Sequelize = require("sequelize")
 
 const connection = new Sequelize('nomeDoBanco', 'root<usuário>', 'senha', {
@@ -56,19 +47,19 @@ const connection = new Sequelize('nomeDoBanco', 'root<usuário>', 'senha', {
 })
 
 module.exports = connection
-</code>
 
+```
 #Acrescentar no index.js
+```
 #Database
-<code>
+
 const connection = require("./database/database")
 connection.authenticate().then(() => {
   console.log("DB conectado com sucesso")
 }).catch((error) => {
   console.log(error)
 })
-</code>
-
+```
 ## Criar pasta Partials
 arquivos header.js footer.js e outros componentes reutilizáveis
 ```html
