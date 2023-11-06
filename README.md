@@ -16,11 +16,14 @@ npm install --save express sequelize mysql2 body-parser ejs
 <code>
 const express = require('express')
 const app = express()
-
-#View Engine#
+</code>
+#View Engine
+<code>
 app.set('view engine', 'ejs')
+</code>
 
-#Rotas# 
+#Rotas
+<code>
 app.get('/', (req, res) => {
 res.send("Hello, world")
 })
