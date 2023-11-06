@@ -1,8 +1,8 @@
 # nodemysqlejs
 
-CRIAR PROJETO USANDO NODE MYSQL BOOTSTRAP EJS
+#CRIAR PROJETO USANDO NODE MYSQL BOOTSTRAP EJS
 
-Dentro da pasta do projeto no terminal
-
+#Dentro da pasta do projeto no terminal
+<code>  
 npm init    
-
+</code>
