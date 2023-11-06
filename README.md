@@ -57,19 +57,21 @@ const connection = new Sequelize('nomeDoBanco', 'root<usuário>', 'senha', {
 
 module.exports = connection
 </code>
+
 #Acrescentar no index.js
 #Database
+<code>
 const connection = require("./database/database")
 connection.authenticate().then(() => {
   console.log("DB conectado com sucesso")
-}).catch((error) +> {
+}).catch((error) => {
   console.log(error)
 })
+</code>
 
 ## Criar pasta Partials
 arquivos header.js footer.js e outros componentes reutilizáveis
-<code>
-
+```html
 <!DOCTYPE html>
 <html lang='pt-br'>
 <head>
@@ -84,6 +86,5 @@ arquivos header.js footer.js e outros componentes reutilizáveis
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </html>
-</code>
-
+```
 ## Obs: usando o bootstrap pelo CDN, precisa baixar o arquivo para o deploy?
