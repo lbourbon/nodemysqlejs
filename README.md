@@ -14,6 +14,7 @@ npm install --save express sequelize mysql2 body-parser ejs
 ## Criar index.js
 ```
 const express = require('express')
+const bodyParser = require('body-parser')
 const app = express()
 
 //View Engine
