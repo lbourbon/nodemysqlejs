@@ -60,8 +60,9 @@ connection.authenticate().then(() => {
   console.log(error)
 })
 ```
-## Criar pasta Partials
-arquivos header.js footer.js e outros componentes reutilizáveis
+## Criar pasta Views/Partials
+p/ arquivos header.js footer.js e outros componentes reutilizáveis
+arquivo index.ejs fica dentro de views
 ```html
 <!DOCTYPE html>
 <html lang='pt-br'>
