@@ -19,14 +19,14 @@ const app = express()
 //View Engine
 app.set('view engine', 'ejs')
 
-#Static
-app.use(express.static('public')) # criar pasta para arquivos estáticos "public"
+//Static
+app.use(express.static('public')) //criar pasta para arquivos estáticos "public"
 
-#Body Parser
+//Body Parser
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 
-#Rotas
+//Rotas
 app.get('/', (req, res) => {
 res.render("index")     # vai renderizar o arquivo index.ejs dentro da pasta "views"
 })
@@ -51,7 +51,7 @@ module.exports = connection
 ```
 #Acrescentar no index.js
 ```
-#Database
+//Database
 
 const connection = require("./database/database")
 connection.authenticate().then(() => {
